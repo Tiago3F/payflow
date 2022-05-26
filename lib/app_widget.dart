@@ -11,7 +11,7 @@ class AppWidget extends StatelessWidget {
       theme: ThemeData(
         primaryColor: AppColors.primary
       ),
-      home: LoginPage() 
+      home: const LoginPage() 
     );
   }
 }

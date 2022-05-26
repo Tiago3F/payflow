@@ -39,7 +39,7 @@ class _LoginPageState extends State<LoginPage> {
                   height: 300,
                 )),
             Positioned(
-              bottom: size.height * 0.17,
+              bottom: size.height * 0.03,
               left: 0,
               right: 0,
               child: Column(
@@ -64,7 +64,6 @@ class _LoginPageState extends State<LoginPage> {
                         GoogleSignIn _googleSignIn = GoogleSignIn(
                           scopes: [
                             'email',
-                            'https://www.googleapis.com/auth/contacts.readonly',
                           ],
                         );
                         try {
