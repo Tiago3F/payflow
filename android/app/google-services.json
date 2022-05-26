@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "65733469730",
+    "project_id": "payflow-tiago",
+    "storage_bucket": "payflow-tiago.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65733469730:android:fffcdd7b9ac3fda3468c7b",
+        "android_client_info": {
+          "package_name": "com.example.payflow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65733469730-531g3k2nhocnt2ojfii0vqpp653i7tnf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.payflow",
+            "certificate_hash": "189572cfdcabf9a11cdfef9f4e785f1737fc64c6"
+          }
+        },
+        {
+          "client_id": "65733469730-kfqsb21e6nfmq992vkth1ruosjdiqp4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGtDKWisvJ2yrcjTy4yLTt7YY_-jTLwuI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "65733469730-kfqsb21e6nfmq992vkth1ruosjdiqp4l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
