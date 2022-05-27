@@ -5,14 +5,18 @@ import 'package:payflow/modules/home/home_page.dart';
 import 'package:payflow/modules/splash/splash_page.dart';
 import 'package:payflow/shared/themes/app_colors.dart';
 
+import 'modules/insert_boleto/insert_boleto_page.dart';
 import 'modules/login/login_page.dart';
 
 class AppWidget extends StatelessWidget {
   AppWidget() {
-    SystemChrome.setPreferredOrientations(
-        [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitDown,
+      DeviceOrientation.portraitUp,
+    ]);
+    SystemChrome.setSystemUIOverlayStyle(
+        SystemUiOverlayStyle(statusBarColor: AppColors.primary));
   }
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -22,9 +26,10 @@ class AppWidget extends StatelessWidget {
       initialRoute: "/splash",
       routes: {
         "/splash": (context) => SplashPage(),
-        "/home": (context) => HomePage(), 
+        "/home": (context) => HomePage(),
         "/login": (context) => LoginPage(),
         "/barcode_scanner": (context) => BarcodeScannerPage(),
+        "/insert_boleto": (context) => InsertBoletoPage()
       },
     );
   }
