@@ -3,13 +3,13 @@ import 'package:payflow/shared/models/user_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthController {
-  var _isAuthenticated = false;
   UserModel? _user;
 
   UserModel get user => _user!;
 
   void setUser(BuildContext context, UserModel? user) {
     if (user != null) {
+      saveUser(user);
       _user = user;
       Navigator.pushReplacementNamed(context, "/home");
     } else {
